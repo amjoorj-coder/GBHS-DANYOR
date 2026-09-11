@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Government Boys High School Danyore, Gilgit-Baltistan — school profile, history, academics and official records.">
+          content="Government Boys High School Danyore, Tehsil Danyore, District Gilgit, Gilgit-Baltistan">
 
     <title>Government Boys High School Danyore</title>
 
@@ -14,36 +16,61 @@
 
 <body>
 
-<!-- ================= TOP BAR ================= -->
+<!-- =====================================================
+     TOP BAR
+===================================================== -->
 
 <div class="top-bar">
-    <div>Government Boys High School Danyore</div>
-    <div>Tehsil Danyore • District Gilgit • Gilgit-Baltistan</div>
+
+    <div class="container top-bar-inner">
+
+        <span>
+            Government Boys High School Danyore
+        </span>
+
+        <span>
+            Tehsil Danyore • District Gilgit • Gilgit-Baltistan
+        </span>
+
+    </div>
+
 </div>
 
 
-<!-- ================= NAVIGATION ================= -->
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
 
-<header class="navbar">
+<header class="navbar" id="navbar">
 
-    <div class="nav-container">
+    <div class="container nav-inner">
 
         <a href="#home" class="brand">
 
-            <div class="school-seal">
+            <div class="brand-mark">
                 GBHS
             </div>
 
             <div class="brand-text">
+
                 <strong>GBHS Danyore</strong>
-                <small>Education • Character • Service</small>
+
+                <span>
+                    Education • Character • Service
+                </span>
+
             </div>
 
         </a>
 
 
-        <button class="menu-toggle" id="menuToggle">
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation">
+
             ☰
+
         </button>
 
 
@@ -52,6 +79,8 @@
             <a href="#about">About</a>
 
             <a href="#history">History</a>
+
+            <a href="#headmasters">Headmasters</a>
 
             <a href="#records">Records</a>
 
@@ -68,57 +97,112 @@
 </header>
 
 
+<!-- =====================================================
+     HERO
+===================================================== -->
 
-<!-- ================= HERO ================= -->
+<main>
 
 <section class="hero" id="home">
 
-    <div class="hero-container">
+    <div class="container hero-grid">
 
         <div class="hero-content">
 
             <span class="eyebrow">
-                Government School • Gilgit-Baltistan
+                GOVERNMENT BOYS HIGH SCHOOL
             </span>
 
             <h1>
-                Government Boys High School Danyore
+                Government Boys<br>
+                <span>High School Danyore</span>
             </h1>
 
             <p>
-                A public educational institution serving the Danyore
-                community and providing secondary education opportunities
-                for boys in District Gilgit.
+                A place of learning, character and service in
+                Danyore, District Gilgit. Explore the school's
+                history, leadership, academic identity and
+                official records.
             </p>
 
 
             <div class="hero-buttons">
 
-                <a href="#history" class="btn btn-primary">
-                    Explore School History
+                <a href="#about" class="btn btn-primary">
+                    Explore School
                 </a>
 
-                <a href="#records" class="btn btn-outline">
-                    View Official Records
+                <a href="#headmasters" class="btn btn-secondary">
+                    Leadership History
                 </a>
+
+            </div>
+
+
+            <div class="hero-meta">
+
+                <div>
+                    <strong>13016</strong>
+                    <span>EMIS Code</span>
+                </div>
+
+                <div>
+                    <strong>66841</strong>
+                    <span>FBISE Code</span>
+                </div>
+
+                <div>
+                    <strong>SSC</strong>
+                    <span>Level</span>
+                </div>
 
             </div>
 
         </div>
 
 
-        <div class="hero-image">
+        <div class="hero-image-card">
 
-            <!-- Replace this with the actual school photograph -->
-            <img
-                src="./assets/Govt. Boys High School Danyore.jfif"
-                alt="Government Boys High School Danyore"
-                onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder');"
-            >
+            <div class="hero-image">
 
-            <div class="placeholder-content">
-                <strong>DANYORE</strong>
-                <span>GILGIT-BALTISTAN</span>
+                <img
+                    src="assets/danyore-school.jpg"
+                    alt="Government Boys High School Danyore"
+                    onerror="
+                    this.style.display='none';
+                    this.parentElement.classList.add('image-placeholder');
+                    "
+                >
+
+                <div class="placeholder-content">
+
+                    <div class="placeholder-icon">
+                        🏫
+                    </div>
+
+                    <strong>
+                        Government Boys High School Danyore
+                    </strong>
+
+                    <span>
+                        Danyore • Gilgit-Baltistan
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-image-caption">
+
+                <span>
+                    GBHS Danyore
+                </span>
+
+                <span>
+                    Gilgit-Baltistan
+                </span>
+
             </div>
 
         </div>
@@ -128,66 +212,108 @@
 </section>
 
 
-
-<!-- ================= ABOUT ================= -->
+<!-- =====================================================
+     ABOUT / SCHOOL PROFILE
+===================================================== -->
 
 <section class="section" id="about">
 
-    <div class="section-heading">
+    <div class="container">
 
-        <h2>School Profile</h2>
+        <div class="section-heading">
 
-        <p>
-            Government Boys High School Danyore is officially listed
-            within the Gilgit-Baltistan education system and is also
-            affiliated with the Federal Board at SSC level.
-        </p>
-
-    </div>
-
-
-    <div class="statistics">
-
-        <div class="stat-card">
-
-            <strong>13016</strong>
-
-            <span>
-                GB Education EMIS Code
+            <span class="section-badge">
+                SCHOOL PROFILE
             </span>
+
+            <h2>
+                A school rooted in education and community
+            </h2>
+
+            <p>
+                Government Boys High School Danyore is a
+                government secondary-level boys' school located
+                in Danyore, District Gilgit, Gilgit-Baltistan.
+            </p>
 
         </div>
 
 
-        <div class="stat-card">
+        <div class="profile-grid">
 
-            <strong>66841</strong>
+            <div class="profile-card profile-main">
 
-            <span>
-                FBISE Institution Code
-            </span>
+                <span class="card-label">
+                    ABOUT THE SCHOOL
+                </span>
 
-        </div>
+                <h3>
+                    Education with purpose
+                </h3>
+
+                <p>
+                    The school represents an important part of
+                    the educational landscape of Danyore. Its
+                    identity is documented through government
+                    education records and examination systems.
+                </p>
+
+                <p>
+                    This website brings together the school's
+                    institutional information, historical
+                    leadership record and publicly documented
+                    identifiers in one place.
+                </p>
+
+            </div>
 
 
-        <div class="stat-card">
+            <div class="stats-grid">
 
-            <strong>SSC</strong>
+                <div class="stat-card">
 
-            <span>
-                Federal Board Level
-            </span>
+                    <strong>13016</strong>
 
-        </div>
+                    <span>
+                        EMIS Code
+                    </span>
+
+                </div>
 
 
-        <div class="stat-card">
+                <div class="stat-card">
 
-            <strong>Gilgit</strong>
+                    <strong>66841</strong>
 
-            <span>
-                District, Gilgit-Baltistan
-            </span>
+                    <span>
+                        FBISE Institution Code
+                    </span>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <strong>SSC</strong>
+
+                    <span>
+                        Education Level
+                    </span>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <strong>Gilgit</strong>
+
+                    <span>
+                        District
+                    </span>
+
+                </div>
+
+            </div>
 
         </div>
 
@@ -196,168 +322,147 @@
 </section>
 
 
+<!-- =====================================================
+     HISTORY
+===================================================== -->
 
-<!-- ================= HISTORY ================= -->
+<section class="section section-soft" id="history">
 
-<section class="section history-section" id="history">
+    <div class="container">
 
-    <div class="section-heading">
+        <div class="section-heading">
 
-        <h2>History & Development</h2>
+            <span class="section-badge">
+                HISTORY & DEVELOPMENT
+            </span>
 
-        <p>
-            The following history is based on publicly available
-            government and education records. Information that could
-            not be reliably verified has intentionally not been added.
-        </p>
+            <h2>
+                A documented institutional journey
+            </h2>
 
-    </div>
+            <p>
+                Key milestones reflected in available
+                institutional and government records.
+            </p>
 
+        </div>
 
-    <div class="history-layout">
-
-
-        <!-- TIMELINE -->
 
         <div class="timeline">
 
-
             <div class="timeline-item">
 
-                <span class="timeline-tag">
-                    EDUCATION RECORD
-                </span>
+                <div class="timeline-dot"></div>
 
-                <h3>
-                    Government Education Institution
-                </h3>
+                <div class="timeline-content">
 
-                <p>
-                    Government Boys High School Danyore is recorded
-                    in the Gilgit-Baltistan Education Management
-                    Information System as Boys High School Danyore.
-                </p>
+                    <span class="timeline-date">
+                        Institutional Record
+                    </span>
 
-                <div class="timeline-date">
-                    EMIS 13016
+                    <h3>
+                        Government Education Institution
+                    </h3>
+
+                    <p>
+                        Government Boys High School Danyore is
+                        documented in Gilgit-Baltistan education
+                        records under EMIS code 13016.
+                    </p>
+
                 </div>
 
             </div>
 
 
-
             <div class="timeline-item">
 
-                <span class="timeline-tag">
-                    SECONDARY EDUCATION
-                </span>
+                <div class="timeline-dot"></div>
 
-                <h3>
-                    FBISE Affiliation
-                </h3>
+                <div class="timeline-content">
 
-                <p>
-                    The Federal Board of Intermediate and Secondary
-                    Education lists Government Boys High School Danyore
-                    as an SSC-level institution.
-                </p>
+                    <span class="timeline-date">
+                        Examination Identity
+                    </span>
 
-                <div class="timeline-date">
-                    Institution Code 66841
+                    <h3>
+                        FBISE Institution Code 66841
+                    </h3>
+
+                    <p>
+                        The school is listed by the Federal Board
+                        of Intermediate and Secondary Education
+                        as a secondary-level institution.
+                    </p>
+
                 </div>
 
             </div>
 
 
-
             <div class="timeline-item">
 
-                <span class="timeline-tag">
-                    COMMUNITY ROLE
-                </span>
+                <div class="timeline-dot"></div>
 
-                <h3>
-                    Danyore Male Examination Centre
-                </h3>
+                <div class="timeline-content">
 
-                <p>
-                    The school has also been identified as the Danyore
-                    Male Examination Centre for Federal Board examinations.
-                </p>
+                    <span class="timeline-date">
+                        Examination Centre
+                    </span>
 
-                <div class="timeline-date">
-                    Centre Code 6841
+                    <h3>
+                        Danyore Male Examination Centre
+                    </h3>
+
+                    <p>
+                        Government records also identify the
+                        Danyore Male Examination Centre with
+                        centre code 6841.
+                    </p>
+
                 </div>
 
             </div>
 
 
-
             <div class="timeline-item">
 
-                <span class="timeline-tag">
-                    SCHOOL SAFETY
-                </span>
+                <div class="timeline-dot"></div>
 
-                <h3>
-                    Infrastructure Improvement
-                </h3>
+                <div class="timeline-content">
 
-                <p>
-                    Government development documentation has recorded
-                    the school among institutions receiving earthquake
-                    safety and infrastructure improvement interventions.
-                </p>
+                    <span class="timeline-date">
+                        Infrastructure Development
+                    </span>
+
+                    <h3>
+                        Infrastructure Improvement
+                    </h3>
+
+                    <p>
+                        The school has also been included in
+                        documented earthquake-safety and
+                        infrastructure improvement interventions.
+                    </p>
+
+                </div>
 
             </div>
 
         </div>
 
 
+        <div class="history-note">
 
-        <!-- HISTORY CARD -->
-
-        <div class="history-card">
-
-            <div class="history-icon">
-                GBHS
-            </div>
-
-            <h3>
-                A School Serving Danyore
-            </h3>
+            <strong>
+                Historical Note
+            </strong>
 
             <p>
-                Government Boys High School Danyore has an important
-                role in providing public secondary education to the
-                Danyore community.
+                The exact founding year of the school should be
+                added only after confirmation from an official
+                institutional record.
             </p>
-
-            <p>
-                Its appearance in official education and examination
-                records demonstrates its role not only as a school
-                but also within the wider secondary examination system.
-            </p>
-
-            <p>
-                The available public records also document investment
-                in safer school infrastructure, an especially important
-                consideration for educational institutions in
-                earthquake-prone mountainous areas.
-            </p>
-
-
-            <div class="historical-note">
-
-                <strong>Historical Note</strong>
-
-                <p>
-                    The exact founding year and early history of the
-                    institution should be added only after confirmation
-                    from official school records.
-                </p>
-
-            </div>
 
         </div>
 
@@ -366,254 +471,795 @@
 </section>
 
 
+<!-- =====================================================
+     HEADMASTERS
+===================================================== -->
 
-<!-- ================= OFFICIAL RECORDS ================= -->
+<section class="section headmasters-section" id="headmasters">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-badge">
+                SCHOOL LEADERSHIP
+            </span>
+
+            <h2>
+                Former & Current Headmasters
+            </h2>
+
+            <p>
+                A historical record of the headmasters who have
+                served Government Boys High School Danyore from
+                1988 to the present.
+            </p>
+
+        </div>
+
+
+        <div class="headmaster-intro">
+
+            <div class="headmaster-icon">
+                🎓
+            </div>
+
+            <div>
+
+                <h3>
+                    Leadership Through the Years
+                </h3>
+
+                <p>
+                    The following record recognizes the dedicated
+                    educators who have served as Headmaster of
+                    Government Boys High School Danyore and
+                    contributed to the school's educational journey.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="headmaster-table-wrapper">
+
+            <table class="headmaster-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Sr. No.
+                        </th>
+
+                        <th>
+                            Name & Qualification
+                        </th>
+
+                        <th>
+                            From
+                        </th>
+
+                        <th>
+                            To
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+
+                    <tr>
+                        <td>01</td>
+                        <td>
+                            <strong>CH. KHALID MAHMOOD</strong>
+                            <span>M.A, M.Ed</span>
+                        </td>
+                        <td>01-09-1988</td>
+                        <td>30-06-1989</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>02</td>
+                        <td>
+                            <strong>K. H. AKHTER</strong>
+                            <span>B.A, M.Ed</span>
+                        </td>
+                        <td>01-07-1989</td>
+                        <td>03-12-1989</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>03</td>
+                        <td>
+                            <strong>ABDUL MAJEED</strong>
+                            <span>M.A, M.Ed</span>
+                        </td>
+                        <td>04-12-1989</td>
+                        <td>29-01-1990</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>04</td>
+                        <td>
+                            <strong>SHAHZADA IBRAHIM</strong>
+                            <span>B.Sc, M.Ed</span>
+                        </td>
+                        <td>30-01-1990</td>
+                        <td>31-03-1992</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>05</td>
+                        <td>
+                            <strong>AMIR UMAYA</strong>
+                            <span>B.A, B.Ed</span>
+                        </td>
+                        <td>01-04-1992</td>
+                        <td>14-04-1992</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>06</td>
+                        <td>
+                            <strong>GHULAM QADIR</strong>
+                            <span>B.A, B.Ed</span>
+                        </td>
+                        <td>15-04-1992</td>
+                        <td>27-04-1993</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>07</td>
+                        <td>
+                            <strong>HAFEEZ AHMAD</strong>
+                            <span>M.Sc, M.Ed</span>
+                        </td>
+                        <td>28-04-1993</td>
+                        <td>22-12-1993</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>08</td>
+                        <td>
+                            <strong>MUSHTAQ AHMAD</strong>
+                            <span>M.A, M.Ed</span>
+                        </td>
+                        <td>23-12-1993</td>
+                        <td>02-07-1997</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>09</td>
+                        <td>
+                            <strong>AMAN ALI SHAH</strong>
+                            <span>B.A, B.Ed</span>
+                        </td>
+                        <td>03-07-1997</td>
+                        <td>10-04-2000</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>10</td>
+                        <td>
+                            <strong>ADALAT KHAN</strong>
+                            <span>M.A, M.Ed</span>
+                        </td>
+                        <td>11-04-2000</td>
+                        <td>19-07-2000</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>11</td>
+                        <td>
+                            <strong>W. MEBOOB ALI KHAN</strong>
+                            <span>B.A, M.Ed</span>
+                        </td>
+                        <td>20-07-2000</td>
+                        <td>16-02-2003</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>12</td>
+                        <td>
+                            <strong>MUSHTAQ AHMAD</strong>
+                            <span>M.A, M.Ed</span>
+                        </td>
+                        <td>17-02-2003</td>
+                        <td>16-09-2004</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>13</td>
+                        <td>
+                            <strong>JAVED AKHTAR BAIG</strong>
+                            <span>M.A, M.Edu</span>
+                        </td>
+                        <td>17-09-2004</td>
+                        <td>20-10-2004</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>14</td>
+                        <td>
+                            <strong>MIRBAZ ALI FARAZ</strong>
+                            <span>M.A (EPM), B.Ed</span>
+                        </td>
+                        <td>21-10-2004</td>
+                        <td>19-06-2009</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>15</td>
+                        <td>
+                            <strong>MUHAMMAD JABIR</strong>
+                            <span>M.A, M.Ed</span>
+                        </td>
+                        <td>20-06-2009</td>
+                        <td>04-01-2010</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>16</td>
+                        <td>
+                            <strong>S. MIR SHAH HUSSAIN</strong>
+                            <span>M.A, B.Ed</span>
+                        </td>
+                        <td>05-01-2010</td>
+                        <td>31-12-2010</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>17</td>
+                        <td>
+                            <strong>HAJI NASIR ALI</strong>
+                            <span>M.A, B.Ed</span>
+                        </td>
+                        <td>01-01-2011</td>
+                        <td>16-02-2013</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>18</td>
+                        <td>
+                            <strong>DOLAT MIR</strong>
+                            <span>B.A, B.Ed</span>
+                        </td>
+                        <td>17-02-2013</td>
+                        <td>29-06-2015</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>19</td>
+                        <td>
+                            <strong>MUHAMMAD AFZAL</strong>
+                            <span>M.A, B.Ed</span>
+                        </td>
+                        <td>30-06-2015</td>
+                        <td>29-08-2015</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>20</td>
+                        <td>
+                            <strong>SHAN MUHAMMAD</strong>
+                            <span>B.A, B.Ed</span>
+                        </td>
+                        <td>30-08-2015</td>
+                        <td>14-09-2015</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>21</td>
+                        <td>
+                            <strong>MUHAMMAD AFZAL</strong>
+                            <span>M.A, B.Ed</span>
+                        </td>
+                        <td>15-09-2015</td>
+                        <td>23-11-2015</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>22</td>
+                        <td>
+                            <strong>LIAQAT ALI</strong>
+                            <span>M.A, M.Edu</span>
+                        </td>
+                        <td>24-11-2015</td>
+                        <td>08-04-2018</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>23</td>
+                        <td>
+                            <strong>MUHAMMAD SHARIF</strong>
+                            <span>B.S.Ed, M.A, M.Ed</span>
+                        </td>
+                        <td>09-04-2018</td>
+                        <td>15-03-2021</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>24</td>
+                        <td>
+                            <strong>ALI MUHAMMAD RAKI</strong>
+                            <span>M.A, M.Ed</span>
+                        </td>
+                        <td>16-03-2021</td>
+                        <td>07-07-2022</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>25</td>
+                        <td>
+                            <strong>MUHAMMAD SHARIF</strong>
+                            <span>B.S.Ed, M.A, M.Ed</span>
+                        </td>
+                        <td>08-07-2022</td>
+                        <td>13-08-2024</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>26</td>
+                        <td>
+                            <strong>GHULAM NABI</strong>
+                            <span>M.A, M.Ed</span>
+                        </td>
+                        <td>14-08-2024</td>
+                        <td>14-11-2024</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>27</td>
+                        <td>
+                            <strong>SHAH MIRZA</strong>
+                            <span>M.Sc, B.Ed</span>
+                        </td>
+                        <td>15-01-2025</td>
+                        <td>03-07-2026</td>
+                    </tr>
+
+
+                    <tr class="current-headmaster">
+
+                        <td>
+                            28
+                        </td>
+
+                        <td>
+
+                            <strong>
+                                MUHAMMAD YASIN
+                            </strong>
+
+                            <span>
+                                M.A English Gold Medalist
+                            </span>
+
+                        </td>
+
+                        <td>
+                            04-07-2026
+                        </td>
+
+                        <td>
+
+                            <span class="present-badge">
+                                Present
+                            </span>
+
+                        </td>
+
+                    </tr>
+
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     OFFICIAL RECORDS
+===================================================== -->
 
 <section class="section" id="records">
 
-    <div class="section-heading">
+    <div class="container">
 
-        <h2>Official Records</h2>
+        <div class="section-heading">
 
-        <p>
-            Key institutional information for students, parents,
-            alumni and the local community.
-        </p>
-
-    </div>
-
-
-    <div class="record-grid">
-
-
-        <article class="record-card">
-
-            <span class="record-label">
-                GB EMIS
+            <span class="section-badge">
+                OFFICIAL RECORDS
             </span>
 
-            <h3>
-                Education Institution Record
-            </h3>
+            <h2>
+                Institutional identity
+            </h2>
 
-            <ul>
+            <p>
+                Key identifiers associated with the school in
+                government and examination records.
+            </p>
 
-                <li>
-                    <strong>Name:</strong>
-                    Boys High School Danyore
-                </li>
+        </div>
 
-                <li>
-                    <strong>EMIS:</strong>
+
+        <div class="records-grid">
+
+
+            <div class="record-card">
+
+                <div class="record-number">
+                    01
+                </div>
+
+                <span class="record-source">
+                    GB EMIS
+                </span>
+
+                <h3>
+                    EMIS Code
+                </h3>
+
+                <strong class="record-value">
                     13016
-                </li>
+                </strong>
 
-                <li>
-                    <strong>Level:</strong>
-                    High
-                </li>
+                <p>
+                    Listed as Boys High School Danyore,
+                    Danyore, District Gilgit.
+                </p>
 
-                <li>
-                    <strong>Area:</strong>
-                    Danyore, Gilgit
-                </li>
-
-            </ul>
-
-        </article>
+            </div>
 
 
+            <div class="record-card">
 
-        <article class="record-card">
+                <div class="record-number">
+                    02
+                </div>
 
-            <span class="record-label">
-                FBISE
-            </span>
+                <span class="record-source">
+                    FBISE
+                </span>
 
-            <h3>
-                Board Affiliation
-            </h3>
+                <h3>
+                    Institution Code
+                </h3>
 
-            <ul>
-
-                <li>
-                    <strong>Institution:</strong>
-                    Govt Boys High School Danyore
-                </li>
-
-                <li>
-                    <strong>Code:</strong>
+                <strong class="record-value">
                     66841
-                </li>
+                </strong>
 
-                <li>
-                    <strong>Level:</strong>
+                <p>
+                    Government Boys High School Danyore,
+                    Tehsil Danyore, District Gilgit.
+                </p>
+
+            </div>
+
+
+            <div class="record-card">
+
+                <div class="record-number">
+                    03
+                </div>
+
+                <span class="record-source">
+                    FBISE
+                </span>
+
+                <h3>
+                    Examination Centre
+                </h3>
+
+                <strong class="record-value">
+                    6841
+                </strong>
+
+                <p>
+                    Danyore Male Examination Centre.
+                </p>
+
+            </div>
+
+
+            <div class="record-card">
+
+                <div class="record-number">
+                    04
+                </div>
+
+                <span class="record-source">
+                    LEVEL
+                </span>
+
+                <h3>
+                    Education Level
+                </h3>
+
+                <strong class="record-value">
                     SSC
-                </li>
+                </strong>
 
-                <li>
-                    <strong>Region:</strong>
-                    Gilgit-Baltistan
-                </li>
+                <p>
+                    Secondary School Certificate level
+                    institution.
+                </p>
 
-            </ul>
-
-        </article>
+            </div>
 
 
+        </div>
 
-        <article class="record-card">
+    </div>
 
-            <span class="record-label">
-                EXAMINATION
+</section>
+
+
+<!-- =====================================================
+     ACADEMICS
+===================================================== -->
+
+<section class="section section-soft" id="academics">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-badge">
+                ACADEMICS & STUDENT LIFE
             </span>
 
-            <h3>
-                Danyore Male Centre
-            </h3>
+            <h2>
+                Building knowledge and character
+            </h2>
 
-            <ul>
+            <p>
+                A school environment focused on learning,
+                discipline and personal development.
+            </p>
 
-                <li>
-                    <strong>Centre:</strong>
-                    Danyore Male Examination Centre
-                </li>
+        </div>
 
-                <li>
-                    <strong>Centre Code:</strong>
-                    6841
-                </li>
 
-                <li>
-                    <strong>Institution:</strong>
-                    GBHS Danyore
-                </li>
+        <div class="features-grid">
 
-            </ul>
 
-        </article>
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    📚
+                </div>
+
+                <h3>
+                    Academic Learning
+                </h3>
+
+                <p>
+                    Supporting students through structured
+                    secondary-level education and learning.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🎯
+                </div>
+
+                <h3>
+                    Student Development
+                </h3>
+
+                <p>
+                    Encouraging discipline, confidence,
+                    responsibility and personal growth.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🏆
+                </div>
+
+                <h3>
+                    Achievement
+                </h3>
+
+                <p>
+                    Providing students with an educational
+                    foundation for future academic opportunities.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🤝
+                </div>
+
+                <h3>
+                    Community
+                </h3>
+
+                <p>
+                    Connecting education with the community
+                    and the wider development of Danyore.
+                </p>
+
+            </div>
+
+
+        </div>
 
     </div>
 
 </section>
 
 
-
-<!-- ================= ACADEMICS ================= -->
-
-<section class="section" id="academics">
-
-    <div class="section-heading">
-
-        <h2>Academics & Student Life</h2>
-
-        <p>
-            Areas that can be expanded with official school information
-            as the website develops.
-        </p>
-
-    </div>
-
-
-    <div class="feature-grid">
-
-
-        <article class="feature-card">
-
-            <div class="feature-number">
-                01
-            </div>
-
-            <h3>
-                Secondary Education
-            </h3>
-
-            <p>
-                Class schedules, curriculum information, examination
-                dates, results and learning resources.
-            </p>
-
-        </article>
-
-
-
-        <article class="feature-card">
-
-            <div class="feature-number">
-                02
-            </div>
-
-            <h3>
-                Student Development
-            </h3>
-
-            <p>
-                Leadership, discipline, science activities, debates,
-                clubs and co-curricular opportunities.
-            </p>
-
-        </article>
-
-
-
-        <article class="feature-card">
-
-            <div class="feature-number">
-                03
-            </div>
-
-            <h3>
-                Sports & Community
-            </h3>
-
-            <p>
-                Sports competitions, school events, awards and
-                community activities.
-            </p>
-
-        </article>
-
-    </div>
-
-</section>
-
-
-
-<!-- ================= NOTICES ================= -->
+<!-- =====================================================
+     NOTICES
+===================================================== -->
 
 <section class="section" id="notices">
 
-    <div class="section-heading">
+    <div class="container">
 
-        <h2>
-            Notices & Announcements
-        </h2>
+        <div class="section-heading">
 
-        <p>
-            Official announcements can be published here by
-            the school administration.
-        </p>
+            <span class="section-badge">
+                NOTICE BOARD
+            </span>
 
-    </div>
-
-
-    <div class="notice-board">
-
-        <div class="notice-icon">
-            !
-        </div>
-
-        <div>
-
-            <h3>
-                School Notice Board
-            </h3>
+            <h2>
+                Notices & Announcements
+            </h2>
 
             <p>
-                Admission dates, examination schedules, holidays,
-                results, parent meetings and other official
-                announcements can be published here.
+                Important school announcements can be published
+                here as the website develops.
             </p>
+
+        </div>
+
+
+        <div class="notice-board">
+
+
+            <div class="notice-item">
+
+                <div class="notice-date">
+
+                    <strong>
+                        INFO
+                    </strong>
+
+                </div>
+
+                <div class="notice-content">
+
+                    <h3>
+                        School Information
+                    </h3>
+
+                    <p>
+                        Official school announcements and
+                        administrative updates will appear here.
+                    </p>
+
+                </div>
+
+                <span class="notice-status">
+                    Information
+                </span>
+
+            </div>
+
+
+            <div class="notice-item">
+
+                <div class="notice-date">
+
+                    <strong>
+                        SSC
+                    </strong>
+
+                </div>
+
+                <div class="notice-content">
+
+                    <h3>
+                        Examination Updates
+                    </h3>
+
+                    <p>
+                        Examination-related announcements can
+                        be added to this section.
+                    </p>
+
+                </div>
+
+                <span class="notice-status">
+                    Updates
+                </span>
+
+            </div>
+
+
+            <div class="notice-item">
+
+                <div class="notice-date">
+
+                    <strong>
+                        NEWS
+                    </strong>
+
+                </div>
+
+                <div class="notice-content">
+
+                    <h3>
+                        School News
+                    </h3>
+
+                    <p>
+                        Future school events, achievements and
+                        community news can be published here.
+                    </p>
+
+                </div>
+
+                <span class="notice-status">
+                    Coming
+                </span>
+
+            </div>
+
 
         </div>
 
@@ -622,29 +1268,35 @@
 </section>
 
 
+<!-- =====================================================
+     CALL TO ACTION
+===================================================== -->
 
-<!-- ================= FUTURE DEVELOPMENT ================= -->
+<section class="cta-section">
 
-<section class="section">
-
-    <div class="cta">
+    <div class="container cta-inner">
 
         <div>
+
+            <span class="section-badge">
+                OUR SCHOOL STORY
+            </span>
 
             <h2>
                 Preserving the school's story
             </h2>
 
             <p>
-                Future versions can include verified photographs,
-                founding history, former headmasters, alumni
-                achievements and annual reports.
+                From generations of educators to today's
+                students, every chapter contributes to the
+                identity of Government Boys High School Danyore.
             </p>
 
         </div>
 
-        <a href="#contact" class="btn btn-primary">
-            School Contact
+
+        <a href="#headmasters" class="btn btn-light">
+            View Leadership Record
         </a>
 
     </div>
@@ -652,106 +1304,117 @@
 </section>
 
 
-
-<!-- ================= FOOTER ================= -->
-
-<footer id="contact">
-
-    <div class="footer-container">
+</main>
 
 
-        <div class="footer-column">
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer" id="contact">
+
+    <div class="container footer-grid">
+
+
+        <div class="footer-brand">
+
+            <div class="brand-mark">
+                GBHS
+            </div>
 
             <h3>
                 Government Boys High School Danyore
             </h3>
 
             <p>
-                Tehsil Danyore, District Gilgit,
-                Gilgit-Baltistan, Pakistan.
-            </p>
-
-            <p>
-                Official phone, email and postal details
-                should be added after confirmation by
-                the school administration.
+                Tehsil Danyore • District Gilgit
+                • Gilgit-Baltistan
             </p>
 
         </div>
 
 
-
         <div class="footer-column">
 
-            <h3>
-                Quick Links
-            </h3>
+            <h4>
+                School
+            </h4>
 
-            <ul>
+            <a href="#about">
+                About
+            </a>
 
-                <li>
-                    <a href="#about">School Profile</a>
-                </li>
+            <a href="#history">
+                History
+            </a>
 
-                <li>
-                    <a href="#history">History</a>
-                </li>
+            <a href="#headmasters">
+                Headmasters
+            </a>
 
-                <li>
-                    <a href="#records">Official Records</a>
-                </li>
-
-                <li>
-                    <a href="#notices">Notices</a>
-                </li>
-
-            </ul>
+            <a href="#academics">
+                Academics
+            </a>
 
         </div>
 
 
+        <div class="footer-column">
+
+            <h4>
+                Records
+            </h4>
+
+            <a href="#records">
+                Official Records
+            </a>
+
+            <a href="#notices">
+                Notices
+            </a>
+
+        </div>
+
 
         <div class="footer-column">
 
-            <h3>
-                Verified Identifiers
-            </h3>
+            <h4>
+                Identifiers
+            </h4>
 
-            <ul>
+            <span>
+                EMIS: 13016
+            </span>
 
-                <li>
-                    GB EMIS: 13016
-                </li>
+            <span>
+                FBISE: 66841
+            </span>
 
-                <li>
-                    FBISE: 66841
-                </li>
-
-                <li>
-                    Level: High / SSC
-                </li>
-
-                <li>
-                    District: Gilgit
-                </li>
-
-            </ul>
+            <span>
+                Centre: 6841
+            </span>
 
         </div>
+
 
     </div>
 
 
-    <div class="copyright">
+    <div class="footer-bottom">
 
-        © <span id="year"></span>
-        Government Boys High School Danyore.
-        Website concept.
+        <div class="container">
+
+            <p>
+                © <span id="year"></span>
+                Government Boys High School Danyore.
+                All rights reserved.
+            </p>
+
+        </div>
 
     </div>
 
 </footer>
-
 
 
 <script src="script.js"></script>

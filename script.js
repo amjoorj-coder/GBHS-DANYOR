@@ -1,6 +1,5 @@
 /* =====================================================
-   GOVERNMENT BOYS HIGH SCHOOL DANYORE
-   FRONTEND JAVASCRIPT
+   GBHS DANYORE WEBSITE JAVASCRIPT
 ===================================================== */
 
 
@@ -15,30 +14,36 @@ const navigation =
     document.getElementById("navigation");
 
 
-menuToggle.addEventListener("click", () => {
+if (menuToggle && navigation) {
 
-    navigation.classList.toggle("active");
+    menuToggle.addEventListener(
+        "click",
+        function () {
 
-});
+            navigation.classList.toggle("active");
 
-
-/* =====================================================
-   CLOSE MOBILE MENU AFTER CLICKING A LINK
-===================================================== */
-
-const navigationLinks =
-    document.querySelectorAll(".navigation a");
+        }
+    );
 
 
-navigationLinks.forEach(link => {
+    const navigationLinks =
+        navigation.querySelectorAll("a");
 
-    link.addEventListener("click", () => {
 
-        navigation.classList.remove("active");
+    navigationLinks.forEach(function (link) {
+
+        link.addEventListener(
+            "click",
+            function () {
+
+                navigation.classList.remove("active");
+
+            }
+        );
 
     });
 
-});
+}
 
 
 /* =====================================================
@@ -58,22 +63,60 @@ if (yearElement) {
 
 
 /* =====================================================
-   SIMPLE SCROLL EFFECT
+   NAVBAR SCROLL EFFECT
 ===================================================== */
 
-window.addEventListener("scroll", () => {
+const navbar =
+    document.getElementById("navbar");
 
-    const navbar =
-        document.querySelector(".navbar");
 
-    if (window.scrollY > 30) {
+window.addEventListener(
+    "scroll",
+    function () {
 
-        navbar.classList.add("scrolled");
+        if (!navbar) return;
 
-    } else {
 
-        navbar.classList.remove("scrolled");
+        if (window.scrollY > 20) {
+
+            navbar.classList.add("scrolled");
+
+        } else {
+
+            navbar.classList.remove("scrolled");
+
+        }
 
     }
+);
 
-});
+
+/* =====================================================
+   CLOSE MOBILE MENU WHEN CLICKING OUTSIDE
+===================================================== */
+
+document.addEventListener(
+    "click",
+    function (event) {
+
+        if (!navigation || !menuToggle) return;
+
+
+        const clickedInsideNavigation =
+            navigation.contains(event.target);
+
+        const clickedMenuButton =
+            menuToggle.contains(event.target);
+
+
+        if (
+            !clickedInsideNavigation &&
+            !clickedMenuButton
+        ) {
+
+            navigation.classList.remove("active");
+
+        }
+
+    }
+);
